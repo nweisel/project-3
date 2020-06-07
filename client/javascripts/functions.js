@@ -80,7 +80,7 @@ let findAllbitBatBotOrNots2 = (arr) => {
 
 let result = [];
 for (i=0;i < arr.length; i++){
-  result.push(bitBatBotOrNot(arr));
+  result.push(findAllbitBatBotOrNots1(arr));
 }
 return result;
 };
@@ -91,7 +91,7 @@ return result;
 let findAllbitBatBotOrNots3 = (arr) => {
 let result = [];
 for (var value of arr){
-  result.push(bitBatBotOrNot(arr));
+  result.push(findAllbitBatBotOrNots1(arr));
 }
    return result;
    //use for..of statement
@@ -100,8 +100,7 @@ for (var value of arr){
 let findAllbitBatBotOrNots4 = (arr) => {
    //your code goes here
    let result = [];
-   arr.forEach(element => result.push(bitBatBotOrNot(arr)));
-console.log(bitBatBotOrNot(arr))
+   arr.forEach(element => result.push(findAllbitBatBotOrNots1));
    //use forEach method
    return result;
 };
